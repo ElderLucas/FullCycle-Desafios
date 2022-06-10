@@ -6,6 +6,7 @@ ADD go.mod main.go /build/
 
 WORKDIR /build
 
+#Build com Flags de otimização de compilação
 RUN go build -ldflags "-w" main.go
 
 FROM scratch
